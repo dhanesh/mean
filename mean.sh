@@ -17,6 +17,6 @@ sudo apt-get install python-software-properties python g++ make nodejs -y
 sudo apt-get install npm -y
 sudo apt-get install nodejs-legacy -y
 echo 'Installing Express.js'
-npm install -g express-generator
+sudo npm install -g express-generator
 echo 'Configuring system for Angular.js'
-npm install -g bower
+sudo npm install -g bower
