@@ -13,9 +13,11 @@ sudo apt-get install software-properties-common -y
 sudo add-apt-repository ppa:chris-lea/node.js
 sudo apt-get update
 echo 'Installing nodejs'
-sudo apt-get install python-software-properties python g++ make nodejs -y
-sudo apt-get install npm -y
-sudo apt-get install nodejs-legacy -y
+curl --silent --location https://deb.nodesource.com/setup_0.12 | sudo bash -
+sudo apt-get install --yes nodejs
+#sudo apt-get install python-software-properties python g++ make nodejs -y
+#sudo apt-get install npm -y
+#sudo apt-get install nodejs-legacy -y
 echo 'Installing Express.js'
 sudo npm install -g express-generator
 echo 'Configuring system for Angular.js'
